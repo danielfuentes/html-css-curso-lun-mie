@@ -1,0 +1,74 @@
+/*
+    Selector: 
+    - Etiquetas: body - h1 - h2 - p - ul - li 
+    - Id: #nombe del idetificador
+    - Clases: .nombre de la clase
+
+    Selector Universal ( * )
+
+    Aplicar el css
+    selector{
+        propiedad : valor;
+        propiedad : valor;
+    }
+
+*/
+/*=== Aplicando CSS de Forma Global===*/
+
+/*=== Importando tipos de fuentes externas===*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+*{
+ box-sizing: border-box;  
+ margin: 0;
+ /*padding: 0;*/
+}
+img{
+    width: 100%;
+}
+ul{
+   /* list-style-type: none;*/
+}
+body{
+    background-color: gainsboro;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/*=== Aplicando CSS al Encabezado===*/
+figure.logo{
+    width: 15%;
+}
+
+/*=== Aplicando CSS a imagenFondo===*/
+.imagenFondo{
+    background-image: url('../img/woman-3190829_1280.jpg');
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+
+
+/*=== Aplicando CSS al titulo===*/
+.titulo{
+    /*=== Tipo de fuente local===*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*=== Tipo de fuente externa===*/
+    font-family: 'Bebas Neue';
+
+    font-size: 50px;  /*Tamaño por defecto de las fuentes es de: 16px*/
+    color: blue;
+    
+    text-align: center;
+    /*width: 50%;
+    /*height: 200px; /*=== Unidades de medidas: Absolutas: px Relativas: % em rem vh vw ===
+    padding: 400px;
+    border: 50px double blue;
+    margin-top: 100px;*/
+    margin: auto;
+}
+.destacado{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: blue;
+}

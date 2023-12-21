@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    <header class="encabezado">
+        <figure class="logo">
+            <img src="https://static.educacionit.com/educacionit/assets/imagotype-it-fill-v2-color.svg" alt="Logo de Educación IT">
+        </figure>
+        <nav class="menu">
+            <ul class="opciones">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./index.html#productos">Productos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulo">Contactanos</h1>
+    <section class="formulario">
+        <form id="form" action="datos.php" method="get">
+            <div>
+                <label for="nombre">Nombre *</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Indique su nombre" minlength="3" required >
+            </div>
+            <div>
+                <label for="apellido">Apellido *</label>
+                <br>
+                <input type="text" id="apellido" name="apellido" placeholder="Indique su apellido" required minlength="3">
+            </div>
+            <div>
+                <label for="email">Correo electrónico *</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div>
+                <label for="pais">País de origen *</label>
+                <br>
+                <select name="pais" id="pais" required>
+                    <option value="#" selected disabled>Seleccione su país...</option>
+                    <option value="01">Argentina</option>
+                    <option value="02">Colombia</option>
+                    <option value="03">Chile</option>
+                    <option value="04">Perú</option>
+                    <option value="05">Venezuela</option>
+                </select>
+            </div>
+            <div>
+                <label for="observaciones">Observaciones *</label>
+                <br>
+                <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="Indique sus observaciones..." required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar observaciones">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
